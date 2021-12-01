@@ -2,20 +2,46 @@
   font-family: "Salsa";
   src: url("Salsa-Regular.ttf") format("truetype");
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+img,
+a {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  -webkit-touch-callout: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+  draggable: false;
+}
 
 body {
   margin: 0;
 }
 
+.main-container-bot {
+  margin-top: 80px;
+}
+
 .main-backgroundgrey {
-  background-color: #e3e3e3;
-  height: 100vh;
+  background-color: #252525;
+  height: 110vh;
   display: flex;
 }
 
 .main-backgroundblue {
   width: 1000px;
-  height: 100vh;
+  height: 110vh;
   background: linear-gradient(
       180deg,
       rgba(37, 37, 37, 0.5) 0%,
@@ -63,16 +89,20 @@ body {
 }
 
 .main-mot-police-input {
-  border: 0;
+  border: none;
+  border-bottom: 3px solid white;
+  margin-bottom: 5px;
   background-color: #252525;
   width: 100%;
   font-family: Salsa;
   font-style: normal;
   font-weight: bolder;
   font-size: 36px;
-  line-height: 44px;
+  line-height: 40px;
   color: #f7f7f7;
   text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .main-actor-screen {
@@ -93,7 +123,7 @@ body {
 
 .main-mp3-screen-launcher {
   height: 60px;
-  width: 734px;
+  width: 674px;
   background: #f7f7f7;
   outline: 10px solid #252525;
   border-radius: 2px;
@@ -124,7 +154,6 @@ body {
 }
 
 .main-actor-container {
-  margin-top: 125px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -132,7 +161,6 @@ body {
 }
 
 .main-film-container {
-  margin-top: 125px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -140,7 +168,6 @@ body {
 }
 
 .main-mp3-container {
-  margin-top: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -150,6 +177,10 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.main-container {
+  margin-top: 80px;
 }
 
 .main-container-top {
@@ -173,6 +204,17 @@ body {
   background-size: contain;
   padding: 25px 25px;
   margin-top: 3px;
+  cursor: pointer;
+}
+
+.main-mp3-settings-search-container {
+  z-index: 1;
+  position: absolute;
+  background-image: url("./assets/search.svg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+  margin-top: 55px;
+  padding: 20px 20px;
   cursor: pointer;
 }
 
@@ -205,4 +247,70 @@ body {
   flex-direction: row;
   align-items: center;
   margin-right: 15px;
+}
+
+.main-film-setting-edit-style {
+  cursor: "pointer";
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.main-film-setting-edit-style {
+  height: 45px;
+  width: 45px;
+}
+
+.main-mp3-screen-setting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-mp3-setting-container {
+  height: 60px;
+  width: 60px;
+  background-color: #e3e3e3;
+  outline: 10px solid #252525;
+  border-radius: 2px;
+}
+
+.main-gotorank-police {
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: #252525;
+}
+
+.main-gotorank-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+}
+
+.main-gotorank {
+  background: #f7f7f7;
+  border: 5px solid #252525;
+  cursor: pointer;
+}
+
+.main-container-footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 32px;
+}
+
+.main-gotorank-icon-style {
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  .main-mp3-title-container {
+    z-index: 1;
+    margin-left: 15vw;
+  }
 }

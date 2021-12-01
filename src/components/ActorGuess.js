@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import template from "../assets/dripJinx.mp4";
 import search from "../assets/search.svg";
 import pause from "../assets/pause.svg";
 import play from "../assets/play.svg";

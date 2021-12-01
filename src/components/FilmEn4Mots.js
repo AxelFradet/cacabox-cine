@@ -3,7 +3,7 @@ import Mot from "./Mot";
 import edit from "../assets/edit.svg";
 import undo from "../assets/undo.svg";
 import forward from "../assets/forward.svg";
-import resetIcon from "../assets/reset.svg";
+import validate from "../assets/validate.svg";
 
 const FilmEn4Mots = () => {
   const [isEdited, setEdited] = useState(false);
@@ -30,9 +30,9 @@ const FilmEn4Mots = () => {
       <div className="main-film-settings">
         <div className="main-film-settings-container">
           <img
-            src={edit}
+            src={isEdited ? validate : edit}
+            className="main-film-setting-edit-style"
             onClick={() => setEdited(!isEdited)}
-            style={{ cursor: "pointer", marginLeft: "15px", marginTop: "3px" }}
           />
           <img
             src={undo}

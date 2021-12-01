@@ -12,6 +12,7 @@ const Mot = (props) => {
           <div className="main-mot-edit-container">
             <input
               className="main-mot-police-input"
+              autoFocus
               value={word}
               onChange={(e) => {
                 setWord(e.target.value);
