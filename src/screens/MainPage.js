@@ -5,14 +5,7 @@ import Mp3Guess from "../components/Mp3Guess";
 import GoToRank from "../components/GoToRank";
 import minia from "../assets/minia.png";
 
-export default class TemperatureInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: [],
-    };
-  }
-
+export default class MainPage extends React.Component {
   render() {
     return (
       <div className="main-backgroundgrey">

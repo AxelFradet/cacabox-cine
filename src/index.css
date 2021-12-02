@@ -51,6 +51,24 @@ body {
   margin: auto;
 }
 
+.rank-backgroundgrey {
+  background-color: #252525;
+  height: 100vh;
+  display: flex;
+}
+
+.rank-backgroundblue {
+  width: 1000px;
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(37, 37, 37, 0.5) 0%,
+      rgba(37, 37, 37, 0) 100%
+    ),
+    #179de8;
+  margin: auto;
+}
+
 .main-logo-container {
   display: flex;
   align-items: center;
@@ -79,6 +97,17 @@ body {
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
+.rank-police-pseudo {
+  z-index: 1;
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 32px;
+  color: #252525;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
 .main-mot-police {
   font-family: Salsa;
   font-style: normal;
@@ -86,6 +115,13 @@ body {
   font-size: 36px;
   line-height: 44px;
   color: #f7f7f7;
+}
+
+.rank-people-letter {
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
 }
 
 .main-mot-police-input {
@@ -110,6 +146,14 @@ body {
   width: 300px;
   background: #f7f7f7;
   outline: 10px solid #252525;
+  border-radius: 2px;
+}
+
+.rank-create-textfield-containe {
+  height: 50px;
+  width: 250px;
+  background: #f7f7f7;
+  outline: 5px solid #252525;
   border-radius: 2px;
 }
 
@@ -306,6 +350,122 @@ body {
 
 .main-gotorank-icon-style {
   margin-left: 20px;
+}
+
+.rank-people-picture {
+  height: 120px;
+  width: 120px;
+  background: #c4c4c4;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rank-create-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rank-create-input-container {
+  margin-left: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-create-input {
+  position: relative;
+  border: 0;
+  width: 230px;
+  outline: None;
+  background: #f7f7f7;
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 36px;
+  line-height: 40px;
+  color: #252525;
+}
+
+.rank-create-textfield-containe {
+  height: 50px;
+  width: 250px;
+  background: #f7f7f7;
+  outline: 5px solid #252525;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.rank-limit {
+  height: 5px;
+  border-width: 0;
+  width: auto;
+  margin: 32px 32px;
+  background-color: #000000;
+}
+
+.rank-top-container {
+  margin-top: 64px;
+  margin-left: 64px;
+}
+
+.rank-fullPeople {
+  padding: 0px 16px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 140px;
+}
+
+.rank-fullPeople-point-police {
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #252525;
+}
+
+.rank-fullPeople-point-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.rank-fullPeople-point-minus {
+  height: 30px;
+  width: 30px;
+  background: #e3e3e3;
+  border: 5px solid #252525;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rank-fullPeople-point-value {
+  height: 45px;
+  width: 80px;
+  background: #f7f7f7;
+  outline: 5px solid #252525;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rank-bot-container {
+  margin: 0px 64px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {

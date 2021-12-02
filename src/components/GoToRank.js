@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import nextPage from "../assets/nextPage.svg";
 
-const url = window.location.href;
-
+const url = window.location.origin;
 const GoToRank = () => {
   return (
     <div
       className="main-gotorank"
       onClick={() => {
-        window.open(url);
+        window.open(url + "?page=rank");
       }}
     >
       <div className="main-gotorank-container">
