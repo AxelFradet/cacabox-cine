@@ -7,12 +7,10 @@ const urlParams = new URLSearchParams(queryString);
 const page = urlParams.get("page");
 
 function App() {
-  if (page == "quizz") {
-    return <MainPage />;
-  } else if (page == "rank") {
+  if (page == "rank") {
     return <RankPage />;
   } else {
-    return <ErrorPage />;
+    return <MainPage />;
   }
 }
 
